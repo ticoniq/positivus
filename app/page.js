@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import Hero from '@/components/Hero'
 import Brand from '@/components/Brand'
 import { Card } from '@/components/ui/card'
