@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section className="container font-spaceGrotesk my-10"
       id="hero">
-      {/* Flex-container */}
+      {/* Flex-containe */}
       <div className="flex flex-col space-y-10 items-center mx-auto md:flex-row md:space-y-0 md:space-x-20">
         {/* Left item */}
         <div className=" flex flex-col justify-center md:w-1/2 space-y-8">
