@@ -9,14 +9,26 @@ import zoom from '../assets/zoom.png'
 function Brand() {
   return (
     <section className="container font-spaceGrotesk" id="brand">
-      <div className="flex flex-wrap justify-center items-center gap-x-24 gap-y-5">
-        <Image src={amazon} className='rounded-lg object-cover filter grayscale' width={'100%'} height={'100%'} alt={amazon}/>
-        <Image src={dribbble} className='rounded-lg object-cover filter grayscale' width={'100%'} height={'100%'} alt={dribbble}/>
-        <Image src={hobspot} className='rounded-lg object-cover filter grayscale' width={'100%'} height={'100%'} alt={hobspot}/>
-        <Image src={notion} className='rounded-lg object-cover filter grayscale' width={'100%'} height={'100%'} alt={notion}/>
-        <Image src={netflix} className='rounded-lg object-cover filter grayscale' width={'100%'} height={'100%'} alt={netflix}/>
-        <Image src={zoom} className='rounded-lg object-cover filter grayscale' width={'100%'} height={'100%'} alt={zoom}/>
-      </div>
+      <ul className="flex flex-wrap justify-evenly items-center text-white">
+          <li className="flex flex-col flex-grow items-center gap-3 rounded-lg p-3">
+            <Image src={amazon} className="filter grayscale" width={'100%'} alt={amazon}/>
+          </li>
+          <li className="flex flex-col flex-grow items-center gap-3 rounded-lg p-3">
+            <Image src={dribbble} className="filter grayscale" width={'100%'} alt={dribbble}/>
+          </li>
+          <li className="flex flex-col flex-grow items-center gap-3 rounded-lg p-3">
+            <Image src={hobspot} className="filter grayscale" width={'100%'} alt={hobspot}/>
+          </li>
+          <li className="flex flex-col flex-grow items-center gap-3 rounded-lg p-3">
+            <Image src={notion} className="filter grayscale" width={'100%'} alt={notion}/>
+          </li>
+          <li className="flex flex-col flex-grow items-center gap-3 rounded-lg p-3">
+            <Image src={netflix} className="filter grayscale" width={'100%'} alt={netflix}/>
+          </li>
+          <li className="flex flex-col flex-grow items-center gap-3 rounded-lg p-3">
+            <Image src={zoom} className="filter grayscale" width={'100%'} alt={zoom}/>
+          </li>
+      </ul>
     </section>
   )
 }

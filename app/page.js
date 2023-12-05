@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card'
 
 export default function Home() {
   return (
-    <main className="px-5 md:px-0">
+    <main className="">
       <Hero />
       <Brand />
       <Card>
