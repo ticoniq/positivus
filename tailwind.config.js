@@ -17,12 +17,14 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        spaceGrotesk: ['Space Grotesk', 'serif'],
+        inter: ['inter', 'sans-serif'],
       },
       colors: {
+        goldColor: "hsl(var(--gold-color))",
+        navyColor: "hsl(var(--navy-color))",
+        blueColor: "hsl(var(--blue-color))",
+        lightBlueColor: "hsl(var(--light-blue-color))",
         darkColor: "hsl(var(--dark-color))",
-        grayColor: "hsl(var(--gray-color))",
-        greenColor: "hsl(var(--green-color))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

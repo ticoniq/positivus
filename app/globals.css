@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +6,12 @@
 
 .boxShadow {
   box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.home_banner {
+  background-position: 50%;
+  background-image: url('../assets/Illustration.png');
+  background-repeat: no-repeat;
 }
  
 @layer base {
@@ -25,9 +31,11 @@
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --dark-color: 240, 16%, 12%;
-    --gray-color: 0, 0%, 95%;
-    --green-color: 87, 100%, 70%;
+    --gold-color: 45, 100%, 79%;
+    --navy-color: 212, 93%, 23%;
+    --blue-color: 213, 93%, 64%;
+    --light-blue-color: 212, 93%, 82%;
+    --dark-color: 210, 11%, 15%;
  
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
