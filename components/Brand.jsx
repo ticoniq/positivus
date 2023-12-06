@@ -8,7 +8,7 @@ import zoom from '../assets/zoom.png'
 
 function Brand() {
   return (
-    <section className="container font-spaceGrotesk" id="brand">
+    <section className="container font-spaceGrotesk my-20" id="brand">
       <ul className="flex flex-wrap justify-evenly items-center text-white">
           <li className="flex flex-col flex-grow items-center gap-3 rounded-lg p-3">
             <Image src={amazon} className="filter grayscale" width={'100%'} alt={amazon}/>
