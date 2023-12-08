@@ -1,10 +1,14 @@
 'use client'
-import Hero from '@/components/Hero'
+import Hero from '@/components/Hero';
+import Navbar from '@/Layouts/Navbar';
 
 export default function Home() {
   return (
-    <main className="">
-      <Hero />
-    </main>
+    <>
+      {/* <Navbar /> */}
+      <main className="">
+        <Hero />
+      </main>
+    </>
   )
 }

@@ -8,7 +8,7 @@ function Hero() {
   return (
     <section className="font-inter bg-navyColor home_banner" id="hero">
       <div className="container text-white">
-        <div className="flex flex-col justify-center items-center py-16 mx-auto md:flex-row">
+        <div className="flex flex-col justify-center items-center py-16 mx-auto space-y-10 text-center md:flex-row md:space-y-0 md:text-left">
 
           {/* Left item */}
           <div className=" flex flex-col justify-center md:w-1/2 space-y-10">
