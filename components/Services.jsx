@@ -71,7 +71,7 @@ function About() {
       </section>
       <section id="services" className="py-10">
         <div className="container space-y-20">
-          <Card className="border-none shadow-none flex flex-col justify-center items-center gap-16 mx-auto space-y-10 text-center md:flex-row-reverse md:text-left">
+          <Card className="border-none shadow-none flex flex-col-reverse justify-center items-center gap-16 mx-auto space-y-10 text-center md:flex-row-reverse md:text-left">
             <CardContent className="p-0 md:w-1/2 space-y-8">
               <CardTitle className="text-darkColor text-3xl font-bold md:text-5xl">Customise it to <br /> your needs</CardTitle>
               <CardDescription>

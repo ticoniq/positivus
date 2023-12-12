@@ -32,9 +32,9 @@ function Work() {
           </article>
         </div>
       </section>
-      <section id="data" className="font-inter py-28">
+      <section id="data" className="font-inter py-0 md:py-28">
         <div className="container">
-          <Card className="border-none shadow-none flex flex-col justify-center items-center gap-16 mx-auto space-y-10 text-center md:flex-row md:text-left">
+          <Card className="border-none shadow-none flex flex-col-reverse justify-center items-center gap-16 mx-auto space-y-10 text-center md:flex-row md:text-left">
             <CardContent className="p-0 md:w-1/2 space-y-14">
               <CardTitle className="text-darkColor text-4xl font-bold md:text-5xl">100% your data</CardTitle>
               <CardDescription>
@@ -52,7 +52,7 @@ function Work() {
           </Card>
         </div>
       </section>
-      <section id="data" className="font-inter py-28">
+      <section id="data" className="font-inter py-10 md:py-28">
         <div className="max-w-[57rem] space-y-5 px-[1.3] mb-14 mx-auto text-center">
           <h3 className="text-3xl font-bold md:text-5xl header-text">
             Our sponsors
