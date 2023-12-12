@@ -12,6 +12,7 @@ import apple from '@/assets/apple.png';
 import microsoft from '@/assets/microsoft.png';
 import slack from '@/assets/slack.png';
 import google from '@/assets/google.png';
+import appImg from '@/assets/apps.png';
 
 function Work() {
   return (
@@ -58,12 +59,6 @@ function Work() {
           </h3>
         </div>
         <div className="container">
-          {/* <span className="border-none shadow-none flex flex-col justify-center items-center gap-16 mx-auto space-y-10 text-center md:flex-row md:text-left">
-              <Image src={data} alt={data} className="w-full" />
-              <Image src={data} alt={data} className="w-full" />
-              <Image src={data} alt={data} className="w-full" />
-              <Image src={data} alt={data} className="w-full" />
-          </span> */}
           <ul className="flex flex-row flex-wrap gap-16 justify-evenly items-center text-white">
             <li className="flex flex-col flex-grow items-center p-3">
               <Image src={apple} className="" width={'100%'} alt={apple}/>
@@ -78,6 +73,26 @@ function Work() {
               <Image src={google} className="" width={'100%'} alt={google}/>
             </li>
           </ul>
+        </div>
+      </section>
+      <section id="app" className="py-28 bg-navyColor">
+        <div className="container space-y-20">
+          <Card className="border-none bg-transparent shadow-none flex flex-col justify-center items-center gap-16 mx-auto text-center md:text-left md:flex-row">
+            <figure className="mx-auto md:w-1/2">
+              <Image src={appImg} alt={appImg} className="w-full" />
+            </figure>
+            <CardContent className="p-0 md:w-1/2 space-y-10">
+              <CardTitle className="w-5/6 mx-auto text-white text-center leading-loose text-3xl font-bold md:text-5xl md:text-left">Work with Your Favorite Apps Using whitepace</CardTitle>
+              <CardDescription className="leading-6 text-white">
+                Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
+              </CardDescription>
+              <div className="md:flex font-medium">
+                <Button className="bg-blueColor">
+                  Try it now <ArrowRight className="mr-2 h-4 w-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </>
