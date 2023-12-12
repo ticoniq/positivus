@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Button } from './ui/button';
 import { ChevronRight } from "lucide-react";
-import illustration from '@/assets/Illustration.png';
+import illustration from '@/assets/illustration.png';
 
 function Hero() {
   
@@ -29,7 +29,7 @@ function Hero() {
           
           {/* Right item */}
           <figure className="mx-auto md:w-1/2">
-            <Image src={illustration} className="w-full object-cover" alt={illustration} />
+            <Image src={illustration} className="w-full object-cover sm:" alt={illustration} />
           </figure>
         </div>
       </div>

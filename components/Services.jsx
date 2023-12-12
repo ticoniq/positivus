@@ -1,79 +1,96 @@
-import { useState } from "react";
-import Image from "next/image";
+import Image from 'next/image';
 import {
   Card,
-  CardHeader,
+  CardContent,
+  CardDescription,
   CardTitle,
-} from "@/components/ui/card";
-import { Button } from "./ui/button";
-import { Mail } from "lucide-react";
-import card1 from '../assets/card1.png';
-import card2 from '../assets/card2.png';
-import card3 from '../assets/card3.png';
-import card4 from '../assets/card4.png';
-import card5 from '../assets/card5.png';
-import card6 from '../assets/card6.png';
+} from "@/components/ui/card"
+import { Button } from './ui/button';
+import { ChevronRight } from "lucide-react";
+import services1 from '@/assets/service1.png';
+import services2 from '@/assets/service2.png';
 
-function Services() {
-
-  const card = [
-    { 
-      id: 1,
-      title: 'Search engine optimization',
-      image: card1,
-      color: 'bg-grayColor',
-    },
-    { 
-      id: 2,
-      title: 'Item 1',
-      image: card2,
-      color: 'bg-greenColor',
-    },
-    { 
-      id: 3,
-      title: 'Item 1',
-      image: card3,
-      color: 'bg-darkColor',
-    },
-    { 
-      id: 4,
-      title: 'Item 1',
-      image: card4,
-      color: 'bg-grayColor',
-    },
-    { 
-      id: 5,
-      title: 'Item 1',
-      image: card5,
-      color: 'bg-greenColor',
-    },
-    { 
-      id: 6,
-      title: 'Item 1',
-      image: card6,
-      color: 'bg-darkColor',
-    },
-  ]
-  
+function About() {
   return (
-    <section className="container font-spaceGrotesk mb-10" id="services">
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2 gap-y-10">
-        {card.map((item) => (
-          <Card key={item.id} className={`rounded-[2rem] border border-darkColor boxShadow p-5 ${item.color}`}>
-            <CardHeader className="flex flex-col sm:flex-row items- justify-between space-y-0">
-              <span className="flex flex-col justify-between">
-                <CardTitle className="max-w-36 text-xl bg-greenColor">{item.title}</CardTitle>
-                <Button size="icon" className="bg-white rounded-full">
-                  <Mail className={`h-4 w-4 text-black`} />
+    <>
+      <section id="services" className="py-28">
+        <div className="container space-y-20">
+          <Card className="border-none shadow-none flex flex-col justify-center items-center gap-16 mx-auto space-y-10 text-center md:flex-row md:text-left">
+            <CardContent className="p-0 md:w-1/2 space-y-8">
+              <CardTitle className="text-darkColor text-4xl font-bold md:text-5xl">Project <br /> Management</CardTitle>
+              <CardDescription>
+              Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
+              </CardDescription>
+              <div className="font-medium">
+                <Button className="bg-blueColor">
+                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
                 </Button>
-              </span>
-              <Image src={item.image} className="self-center"  alt={card1}/>
-            </CardHeader>
+              </div>
+            </CardContent>
+            <figure className="mx-auto md:w-1/2">
+              <Image src={services1} alt={services1} className="w-full" />
+            </figure>
           </Card>
-        ))}
-      </div>
-    </section>
+          <Card className="border-none shadow-none flex flex-col justify-center items-center gap-16 mx-auto space-y-10 text-center md:text-left even:md:flex-row-reverse">
+            <CardContent className="p-0 md:w-1/2 space-y-8">
+              <CardTitle className="text-darkColor text-3xl font-bold md:text-5xl">Work together</CardTitle>
+              <CardDescription>
+                With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
+              </CardDescription>
+              <div className="hidden md:flex font-medium">
+                <Button className="bg-blueColor">
+                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
+                </Button>
+              </div>
+            </CardContent>
+            <figure className="mx-auto md:w-1/2">
+              <Image src={services2} alt={services2} className="w-full" />
+            </figure>
+          </Card>
+        </div>
+      </section>
+      <section id="services" className="py-20 bg-navyColor">
+        <div className="container space-y-20">
+          <Card className="border-none bg-transparent shadow-none flex flex-col justify-center items-center gap-16 mx-auto text-center md:flex-row md:text-left">
+            <CardContent className="p-0 md:w-1/2 space-y-8">
+              <CardTitle className="text-white text-4xl font-bold md:text-5xl">Use as Extension</CardTitle>
+              <CardDescription className="text-white">
+                Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+              </CardDescription>
+              <div className="font-medium">
+                <Button className="bg-blueColor">
+                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
+                </Button>
+              </div>
+            </CardContent>
+            <figure className="mx-auto md:w-1/2">
+              <Image src={services1} alt={services1} className="w-full" />
+            </figure>
+          </Card>
+        </div>
+      </section>
+      <section id="services" className="py-10">
+        <div className="container space-y-20">
+          <Card className="border-none shadow-none flex flex-col justify-center items-center gap-16 mx-auto space-y-10 text-center md:flex-row-reverse md:text-left">
+            <CardContent className="p-0 md:w-1/2 space-y-8">
+              <CardTitle className="text-darkColor text-3xl font-bold md:text-5xl">Customise it to <br /> your needs</CardTitle>
+              <CardDescription>
+                Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
+              </CardDescription>
+              <div className="hidden md:flex font-medium">
+                <Button className="bg-blueColor">
+                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
+                </Button>
+              </div>
+            </CardContent>
+            <figure className="mx-auto md:w-1/2">
+              <Image src={services1} alt={services1} className="w-full" />
+            </figure>
+          </Card>
+        </div>
+      </section>
+    </>
   );
 }
 
-export default Services;
+export default About;
