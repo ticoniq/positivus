@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Button } from './ui/button';
-import { ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import services1 from '@/assets/service1.png';
 import services2 from '@/assets/service2.png';
 
@@ -23,7 +23,7 @@ function About() {
               </CardDescription>
               <div className="font-medium">
                 <Button className="bg-blueColor">
-                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
+                  Try it now <ArrowRight className="mr-2 h-4 w-4" />
                 </Button>
               </div>
             </CardContent>
@@ -37,9 +37,9 @@ function About() {
               <CardDescription>
                 With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
               </CardDescription>
-              <div className="hidden md:flex font-medium">
+              <div className="md:flex font-medium">
                 <Button className="bg-blueColor">
-                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
+                  Try it now <ArrowRight className="mr-2 h-4 w-4" />
                 </Button>
               </div>
             </CardContent>
@@ -59,7 +59,7 @@ function About() {
               </CardDescription>
               <div className="font-medium">
                 <Button className="bg-blueColor">
-                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
+                  Try it now <ArrowRight className="mr-2 h-4 w-4" />
                 </Button>
               </div>
             </CardContent>
@@ -77,9 +77,9 @@ function About() {
               <CardDescription>
                 Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
               </CardDescription>
-              <div className="hidden md:flex font-medium">
+              <div className="md:flex font-medium">
                 <Button className="bg-blueColor">
-                  Try it now <ChevronRight className="mr-2 h-4 w-4" />
+                  Try it now <ArrowRight className="mr-2 h-4 w-4" />
                 </Button>
               </div>
             </CardContent>

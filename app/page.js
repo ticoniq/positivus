@@ -1,7 +1,8 @@
 'use client'
-import Hero from '@/components/Hero';
 import Navbar from '@/Layouts/Navbar';
+import Hero from '@/components/Hero';
 import Services from '@/components/Services';
+import Price from '@/components/Price';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="font-inter">
         <Hero />
         <Services />
+        <Price />
       </main>
     </>
   )

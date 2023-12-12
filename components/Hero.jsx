@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import illustration from '@/assets/illustration.png';
 
 function Hero() {
@@ -22,7 +22,7 @@ function Hero() {
             </article>
             <div className="hidden md:flex font-medium">
               <Button className="bg-blueColor">
-                Try Whitepace free <ChevronRight className="mr-2 h-4 w-4" />
+                Try Whitepace free <ArrowRight className="mr-2 h-4 w-4" />
               </Button>
             </div>
           </div>
