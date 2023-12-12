@@ -12,6 +12,23 @@
   background-image: url('../assets/element.png');
   background-repeat: no-repeat;
 }
+
+.header-text {
+  padding: 30px 0 8px;
+  position: relative;
+}
+
+.header-text::before {
+  content: "";
+  position: absolute;
+  left: 65%;
+  bottom: .1rem;
+  width: 150px;
+  height: 14px;
+  transform: skew(-12deg) translateX(-50%);
+  background: hsl(45, 100%, 79%);
+  z-index: -1;
+}
  
 @layer base {
   :root {

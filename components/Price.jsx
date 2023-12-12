@@ -12,8 +12,8 @@ function Price() {
   return (
     <>
       <section id="price font-inter" className="py-28">
-        <div className="max-w-[57rem] space-y-5 mb-14 mx-auto text-center">
-          <h3 className="max-w-80 leading-10 text-3xl font-bold md:text-5xl">
+        <div className="max-w-[57rem] space-y-5 px-[1.3] mb-14 mx-auto text-center">
+          <h3 className="text-3xl font-bold md:text-5xl header-text">
             Choose Your Plan
           </h3>
           <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
@@ -52,7 +52,7 @@ function Price() {
               </article>
             </CardContent>
             <CardFooter className="pb-0">
-              <Button className="bg-white border border-goldColor text-darkColor">
+              <Button className="bg-white border border-goldColor text-darkColor hover:text-white">
                 Get Started
               </Button>
             </CardFooter>
@@ -128,7 +128,7 @@ function Price() {
               </article>
             </CardContent>
             <CardFooter className="pb-0">
-              <Button className="bg-white border border-goldColor text-darkColor">
+              <Button className="bg-white border border-goldColor text-darkColor hover:text-white">
                 Get Started
               </Button>
             </CardFooter>
