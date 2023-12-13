@@ -20,13 +20,13 @@ import android from '@/assets/android.png';
 function Testimonial() {
   return (
     <>
-      <section id="price" className="font-inter py-28">
+      <section id="price" className="font-inter py-10 md:py-28">
         <div className="max-w-[57rem] space-y-5 px-[1.3] mb-14 mx-auto text-center">
           <h3 className="text-3xl font-bold md:text-5xl header-text text-darkColor">
             What Our Clients Says
           </h3>
         </div>
-        <div className="container border-none shadow-none flex flex-col justify-center items-center gap-10 md:flex-row">
+        <div className="container flex flex-row overflow-scroll justify-center items-center gap-10">
         <Card className="py-14 px-6 border-none shadow-lightBlueColor">
           <CardContent className="p-0">
             <Image src={navyQuote} alt={navyQuote} className="w-1/5 mb-8"/>
