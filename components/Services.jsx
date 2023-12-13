@@ -9,6 +9,7 @@ import { Button } from './ui/button';
 import { ArrowRight } from "lucide-react";
 import services1 from '@/assets/service1.png';
 import services2 from '@/assets/service2.png';
+import services3 from '@/assets/service3.png';
 
 function About() {
   return (
@@ -84,7 +85,7 @@ function About() {
               </div>
             </CardContent>
             <figure className="mx-auto md:w-1/2">
-              <Image src={services1} alt={services1} className="w-full" />
+              <Image src={services3} alt={services3} className="w-full" />
             </figure>
           </Card>
         </div>

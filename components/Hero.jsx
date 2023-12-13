@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Button } from './ui/button';
 import { ArrowRight } from "lucide-react";
-import services1 from '@/assets/service1.png';
+import services1 from '@/assets/header.png';
 
 function Hero() {
   
