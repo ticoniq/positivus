@@ -26,7 +26,7 @@ function Testimonial() {
             What Our Clients Says
           </h3>
         </div>
-        <div className="container flex flex-row overflow-scroll justify-center items-center gap-10">
+        <div className="container flex flex-row overflow-x-scroll justify-center items-center gap-10">
         <Card className="py-14 px-6 border-none shadow-lightBlueColor">
           <CardContent className="p-0">
             <Image src={navyQuote} alt={navyQuote} className="w-1/5 mb-8"/>
