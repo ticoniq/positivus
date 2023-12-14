@@ -11,7 +11,7 @@ import { CheckCircle } from "lucide-react";
 function Price() {
   return (
     <>
-      <section id="price font-inter" className="py-28">
+      <section id="price" className="font-inter py-16 md:py-28">
         <div className="max-w-[57rem] space-y-5 px-[1.3] mb-14 mx-auto text-center">
           <h3 className="text-3xl font-bold md:text-5xl header-text">
             Choose Your Plan
