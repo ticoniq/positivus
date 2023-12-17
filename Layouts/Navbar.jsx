@@ -42,12 +42,12 @@ function Navbar({ dark, data }) {
   }, []);
 
   return (
-    <header className="font-inter bg-navyColor home_banner" id="hero">
-      <div className="container text-white">
+    <header className="font-inter bg-navyColor" id="hero">
+      <div className="container text-white py-8">
         <Sheet>
           <nav className="flex flex-row justify-between items-center text-center md:flex-row md:space-y-0 md:space-x-20 md:text-left">
             <div className="w-24">
-              <Image src={logo} className="w-1/2" alt={logo} />
+              <Image src={logo} className="w-20" alt={logo} />
             </div>
 
             <ul className="hidden gap-10 text-white md:flex">
@@ -63,20 +63,28 @@ function Navbar({ dark, data }) {
 
             <div className="hidden md:flex gap-5">
               <Button className="bg-blueColor">
-                hello
+                Login
               </Button>
               <Button className="bg-blueColor">
-                hello
+                Try Whitepace free
               </Button>
             </div>
-            <SheetTrigger className="text-white hidden sm:block"><Menu className="h-6 dark:text-white" /></SheetTrigger>
+            <SheetTrigger className="text-white hide "><Menu className="h-6 dark:text-white" /></SheetTrigger>
           </nav>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+              <SheetTitle>Whitespace</SheetTitle>
               <SheetDescription>
-                This action cannot be undone. This will permanently delete your account
-                and remove your data from our servers.
+              <ul className="hidden gap-10 text-black md:flex">
+              {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-sm font-semibold leading-6 text-black">
+                    {item.name}
+                  </a>
+                ))}
+              </ul>
               </SheetDescription>
             </SheetHeader>
           </SheetContent>
