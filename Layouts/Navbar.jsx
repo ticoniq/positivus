@@ -1,21 +1,29 @@
 import { useState, useEffect } from "react";
-import { Dialog } from "@headlessui/react";
+import { Menu, XIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
-  Menu,
-  XIcon,
-} from "lucide-react";
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
-function Navbar() {
+import Image from "next/image";
+import logo from '../assets/Logo1.png';
+
+const navigation = [
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#About" },
+  { name: "Skill", href: "#Skill" },
+  { name: "Project", href: "#Project" },
+  { name: "Contact", href: "#Contact" },
+];
+
+function Navbar({ dark, data }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showShadow, setShowShadow] = useState(false);
-
-  const navigation = [
-    { name: "Home", href: "#hero" },
-    { name: "About", href: "#About" },
-    { name: "Skill", href: "#Skill" },
-    { name: "Project", href: "#Project" },
-    { name: "Contact", href: "#Contact" },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,32 +42,46 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="sticky bg-navyColor">
-      <nav className="container border border-red-600 flex items-center justify-between py-16">
-        <div className="flex lg:flex-1">
-          <a href="#hero" className="">
-            <span className="font-semibold md:font-bold text-lg md:text-xl">TochiDev</span>
-          </a>
-        </div>
-        <ul className="hidden md:flex md:gap-x-16 items-center lg:mr-16">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6">
-              {item.name}
-            </a>
-          ))}
-        </ul>
-        <div className="flex md:hidden">
-          <button
-            type="button"
-            className="inline-flex items-center justify-center rounded-md"
-            onClick={() => setMobileMenuOpen(true)}>
-            <Menu className="h-6 dark:text-white" aria-hidden="true" />
-          </button>
-        </div>
-      </nav>
+    <header className="font-inter bg-navyColor home_banner" id="hero">
+      <div className="container text-white">
+        <Sheet>
+          <nav className="flex flex-row justify-between items-center text-center md:flex-row md:space-y-0 md:space-x-20 md:text-left">
+            <div className="w-24">
+              <Image src={logo} className="w-1/2" alt={logo} />
+            </div>
+
+            <ul className="hidden gap-10 text-white md:flex">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-sm font-semibold leading-6 text-gray-900">
+                  {item.name}
+                </a>
+              ))}
+            </ul>
+
+            <div className="hidden md:flex gap-5">
+              <Button className="bg-blueColor">
+                hello
+              </Button>
+              <Button className="bg-blueColor">
+                hello
+              </Button>
+            </div>
+            <SheetTrigger className="text-white hidden sm:block"><Menu className="h-6 dark:text-white" /></SheetTrigger>
+          </nav>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+              <SheetDescription>
+                This action cannot be undone. This will permanently delete your account
+                and remove your data from our servers.
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+      </div>
     </header>
   );
 }

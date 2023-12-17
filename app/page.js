@@ -12,6 +12,7 @@ export default function Home() {
     <>
       {/* <Navbar /> */}
       <main className="font-inter">
+        <Navbar />
         <Hero />
         <Services />
         <Price />
