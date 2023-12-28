@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FacebookIcon, TwitterIcon, LinkedinIcon } from "lucide-react";
 import logo from '../assets/Logo1.png';
 
 function Footer() {
@@ -51,6 +51,20 @@ function Footer() {
               </Button>
             </div>
           </div>
+        </section>
+        <section className="mt-10 footer-end flex flex-col space-y-10 justify-between md:flex-row text-white md:space-y-0 md:mt-20">
+          <ul className="flex flex-col gap-10 col-span-3 md:flex-row">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Terms & privacy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Status</a></li>
+            <p>©2021 Whitepace LLC.</p>
+          </ul>
+          <ul className="flex gap-5">
+            <li><a href="#"><FacebookIcon /></a></li>
+            <li><a href="#"><TwitterIcon /></a></li>
+            <li><a href="#"><LinkedinIcon /></a></li>
+          </ul>
         </section>
       </div>
     </footer>
