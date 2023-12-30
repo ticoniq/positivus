@@ -1,15 +1,20 @@
 'use client'
-import Hero from '@/components/Hero'
-import Brand from '@/components/Brand'
-import Services from '@/components/Services'
-import { Card } from '@/components/ui/card'
+import Navbar from '@/Layouts/Navbar';
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import Price from '@/components/Price';
+import Work from '@/components/Work';
 
 export default function Home() {
   return (
-    <main className="">
-      <Hero />
-      <Brand />
-      <Services />
-    </main>
+    <>
+      {/* <Navbar /> */}
+      <main className="font-inter">
+        <Hero />
+        <Services />
+        <Price />
+        <Work />
+      </main>
+    </>
   )
 }

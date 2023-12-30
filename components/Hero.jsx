@@ -1,40 +1,36 @@
 import Image from 'next/image';
-import illustration from '@/assets/Illustration.png';
 import { Button } from './ui/button';
+import { ArrowRight } from "lucide-react";
+import services1 from '@/assets/service1.png';
 
 function Hero() {
   
   return (
-    <section className="container font-spaceGrotesk my-10"
-      id="hero">
-      {/* Flex-containe */}
-      <div className="flex flex-col space-y-10 items-center mx-auto md:flex-row md:space-y-0 md:space-x-20">
-        {/* Left item */}
-        <div className=" flex flex-col justify-center md:w-1/2 space-y-8">
-          <article className="space-y-5 self-start text-black">
-            <h1 className="max-w-80 leading-10 text-3xl font-medium md:text-4xl">
-              Navigating the <br /> digital landscape <br /> for success
-            </h1>
-            <p className="max-w-sm text-base font-normal hidden md:block">
-              Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
-            </p>
-          </article>
-          <div className="hidden md:flex font-medium">
-            <Button>Book a consultation</Button>
+    <section className="font-inter bg-navyColor home_banner" id="hero">
+      <div className="container text-white">
+        <div className="flex flex-col justify-center items-center py-16 mx-auto space-y-10 text-center md:flex-row md:space-y-0 md:space-x-20 md:text-left">
+
+          {/* Left item */}
+          <div className=" flex flex-col justify-center md:w-1/2 space-y-10">
+            <article className="space-y-10 self-start">
+              <h1 className="max-w-80 leading-10 text-3xl font-bold md:text-5xl">
+                Get More Done with whitepace
+              </h1>
+              <p className=" text-base font-normal">
+                Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
+              </p>
+            </article>
+            <div className="hidden md:flex font-medium">
+              <Button className="bg-blueColor">
+                Try Whitepace free <ArrowRight className="mr-2 h-4 w-4" />
+              </Button>
+            </div>
           </div>
-        </div>
-        <figure className="mx-auto md:w-1/2">
-          <Image src={illustration} className="w-full object-cover" alt={illustration} />
-        </figure>
-        <div className="space-y-8 md:hidden">
-          <article className="space-y-5 text-black">
-            <p className="text-base font-normal">
-              Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
-            </p>
-          </article>
-          <div className="flex font-medium">
-            <Button>Book a consultation</Button>
-          </div>
+          
+          {/* Right item */}
+          <figure className="mx-auto md:w-1/2">
+            <Image src={services1} className="w-full object-cover sm:" alt={services1} />
+          </figure>
         </div>
       </div>
     </section>
